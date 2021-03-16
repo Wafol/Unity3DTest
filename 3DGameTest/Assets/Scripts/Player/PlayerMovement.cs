@@ -12,23 +12,15 @@ public class PlayerMovement : MonoBehaviour {
 
     private bool goLeft;
     private bool goRight;
-
-    // Start is called before the first frame update
-    // ReSharper disable once ArrangeTypeMemberModifiers
-    public void Start() {
-        Debug.Log("hello work");
-        //rb.AddForce(0, 0, 90);
-    }
-
-    public void Update() {
+    
+    private void Update() {
         //input
         goRight = Input.GetKey("d");
         goLeft = Input.GetKey("a");
     }
 
     // Update is called once per frame
-    // ReSharper disable once ArrangeTypeMemberModifiers
-    public void FixedUpdate() {
+    private void FixedUpdate() {
         rb.AddForce(0, 0, forwardForce * Time.deltaTime);
 
         if (goRight)
