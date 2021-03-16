@@ -24,9 +24,9 @@ public class PlayerMovement : MonoBehaviour {
         rb.AddForce(0, 0, forwardForce * Time.deltaTime);
 
         if (goRight)
-            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
+            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
 
         if (goLeft)
-            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
+            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
     }
 }
