@@ -11,11 +11,14 @@
           <e p="Camera" t="Include">
             <e p="FollowPlayer.cs" t="Include" />
           </e>
+          <e p="GameManager" t="Include">
+            <e p="GameStatesManager.cs" t="Include" />
+            <e p="TarainGenerator.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="PlayerCollision.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
           </e>
-          <e p="TarainGenerator.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="Score.cs" t="Include" />
           </e>
