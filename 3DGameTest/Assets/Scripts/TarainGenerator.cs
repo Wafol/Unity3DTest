@@ -7,7 +7,7 @@ public class TarainGenerator : MonoBehaviour {
 
     public Transform pfObstacle;
 
-    private const float distanceFromStart = 15f;
+    private const float distanceFromStart = 20f;
     
     private const float maxSpace = 20f;
     private const float minSpace = 5f;
